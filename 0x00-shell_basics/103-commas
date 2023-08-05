@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -m -p | tr -d '\n'
+echo -n "./, ../, "; ls -m | tr -d '\n'
