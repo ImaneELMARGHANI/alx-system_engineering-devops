@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap | grep -v '^$' | tr '\n' ','
+echo -n "./, ../, "; ls -m | tr -d '\n'
