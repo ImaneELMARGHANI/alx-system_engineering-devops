@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty | rev | cut -d '/' -f 1 | rev
+awk '{printf "%s", substr($0, 1, 1)} END {printf "\n"}'
