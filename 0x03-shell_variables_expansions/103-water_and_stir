@@ -1,2 +1,2 @@
-#!/bin/bash
-printf "%x\n" "$DECIMAL"
+#!/bin/sh
+WATER=$(echo "$WATER" | tr 'water' '01234'); STIR=$(echo "$STIR" | tr 'stir' '01234'); result=$((WATER + STIR)); echo "obase=bestchol; $result" | bc | tr '01234' 'bestchol'
