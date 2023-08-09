@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -n "./, ../, "; ls -m | tr -d '\n'
+ls -ma --indicator-style=slash --sort=version
